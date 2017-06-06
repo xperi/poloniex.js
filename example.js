@@ -16,13 +16,16 @@ Poloniex.STRICT_SSL = false;
 
 
 // Public call
-poloniex.getTicker(function(err, data){
-    if (err){
-        console.log('ERROR', err);
-        return;
-    }
-
-    console.log(data);
+// poloniex.getTicker(function(err, data){
+//     if (err){
+//         console.log('ERROR', err);
+//         return;
+//     }
+//
+//     console.log(data);
+// });
+poloniex.makeNonce(function(nonce){
+    console.log(nonce);
 });
 
 
